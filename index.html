@@ -43,6 +43,14 @@
             flex-direction: column;
             height: 600px;
         }
+          #adsterra-sticky {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #fff;
+        text-align: center;
+        z-index: 9999;
+    }
     </style>
 </head>
 
@@ -63,7 +71,18 @@
         <canvas id="canvas"></canvas>
         <button id="downloadBtn">Download Pixelated Image</button>
     </div>
-
+<div id="adsterra-sticky">
+   <script type="text/javascript">
+	atOptions = {
+		'key' : 'f3bd8ad046d6b9b1b5130e98783546db',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/f3bd8ad046d6b9b1b5130e98783546db/invoke.js"></script>
+</div>
     <script>
         const fileInput = document.getElementById('fileInput');
         const pixelSizeInput = document.getElementById('pixelSize');
