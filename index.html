@@ -43,19 +43,42 @@
             flex-direction: column;
             height: 600px;
         }
-          #adsterra-sticky {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background: #fff;
-        text-align: center;
-        z-index: 9999;
-    }
+	     #adsterra-top {
+            margin: 10px auto;
+            max-width: 728px;
+        }
+     /* Sticky Sidebar Ads */
+        .adsterra-sidebar {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 160px; /* Standard sidebar banner size */
+            height: auto;
+            z-index: 9999;
+        }
+	      #adsterra-left {
+            left: 10px;
+        }
+        #adsterra-right {
+            right: 10px;
+        }
     </style>
 </head>
 
 <body>
-
+	<----Top banner--->
+ <div id="adsterra-top">
+           <script type="text/javascript">
+	atOptions = {
+		'key' : 'f3bd8ad046d6b9b1b5130e98783546db',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/f3bd8ad046d6b9b1b5130e98783546db/invoke.js"></script>
+    </div>
     <h2>IMAGE PIXELATOR</h2>
 
     <input type="file" id="fileInput" accept="image/*">
@@ -71,18 +94,37 @@
         <canvas id="canvas"></canvas>
         <button id="downloadBtn">Download Pixelated Image</button>
     </div>
-<div id="adsterra-sticky">
-   <script type="text/javascript">
+
+		<---Ads---->
+			
+<div id="adsterra-left" class="adsterra-sidebar">
+          <script type="text/javascript">
 	atOptions = {
 		'key' : 'f3bd8ad046d6b9b1b5130e98783546db',
 		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
+		'height' : 468,
+		'width' : 60,
 		'params' : {}
 	};
 </script>
 <script type="text/javascript" src="//www.highperformanceformat.com/f3bd8ad046d6b9b1b5130e98783546db/invoke.js"></script>
-</div>
+    </div>
+
+	<div id="adsterra-right" class="adsterra-sidebar">
+          <script type="text/javascript">
+	atOptions = {
+		'key' : 'f3bd8ad046d6b9b1b5130e98783546db',
+		'format' : 'iframe',
+		'height' : 468,
+		'width' : 60,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/f3bd8ad046d6b9b1b5130e98783546db/invoke.js"></script>
+    </div>
+		<---jvascript--->
+			
+
     <script>
         const fileInput = document.getElementById('fileInput');
         const pixelSizeInput = document.getElementById('pixelSize');
